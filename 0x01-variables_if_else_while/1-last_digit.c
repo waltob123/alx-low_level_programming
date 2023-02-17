@@ -20,6 +20,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	int last_digit;
+
 	last_digit = n % 10;
 	if (last_digit > 5)
 	{
