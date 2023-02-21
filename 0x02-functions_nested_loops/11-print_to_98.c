@@ -15,13 +15,16 @@ void print_to_98(int n)
 	{
 		while (n <= stop_point)
 		{
-			printf("%d, ", n);
+			if (n == 98)
+				printf("%d", n);
+			else
+				printf("%d, ", n);
 			n++;
 		}
 	}
 	else if (n > stop_point)
 	{
-		while (n >= 98)
+		while (n > stop_point)
 		{
 			printf("%d, ", n);
 			n--;
