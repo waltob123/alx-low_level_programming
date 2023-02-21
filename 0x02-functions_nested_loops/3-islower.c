@@ -2,6 +2,8 @@
 
 /**
  * _islower - checks if argument is lowercase
+ *
+ * c - argument to check if is lower or upper
  */
 
 int _islower(int c)
