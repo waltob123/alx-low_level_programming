@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * print_to_98 - Prints all whole numbers from n to 98
+ *
+ * @n: number to start from
+ */
+
+void print_to_98(int n)
+{
+	int stop_point = 98;
+
+	while (n <= 98)
+	{
+		_putchar(n + '0');
+		_putchar(',');
+		_putchar('_');
+	}
+}
