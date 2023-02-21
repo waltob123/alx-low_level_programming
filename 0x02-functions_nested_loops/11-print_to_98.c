@@ -10,10 +10,23 @@ void print_to_98(int n)
 {
 	int stop_point = 98;
 
-	while (n <= stop_point)
+	if (n <= stop_point)
 	{
-		_putchar(n + '0');
-		_putchar(',');
-		_putchar('_');
+		while (n <= stop_point)
+		{
+			_putchar(n + '0');
+			_putchar(',');
+			_putchar(' ');
+			n++;
+		}
 	}
+	if (n > stop_point)
+	{
+		while (n >= 98)
+		{
+			_putchar(n + '0');
+			_putchar(',');
+			_putchar(' ');
+			n--;
+		}
 }
