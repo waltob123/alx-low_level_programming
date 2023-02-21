@@ -18,12 +18,14 @@ void print_to_98(int n)
 			printf("%d", n);
 			if (n != stop_point)
 				printf(", ");
+			else
+				printf(" ");
 			n++;
 		}
 	}
 	else if (n > stop_point)
 	{
-		while (n > stop_point)
+		while (n >= stop_point)
 		{
 			printf("%d, ", n);
 			n--;
