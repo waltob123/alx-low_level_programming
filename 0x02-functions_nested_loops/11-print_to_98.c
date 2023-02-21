@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - Prints all whole numbers from n to 98
@@ -14,9 +15,7 @@ void print_to_98(int n)
 	{
 		while (n <= stop_point)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n);
 			n++;
 		}
 	}
@@ -24,9 +23,7 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n);
 			n--;
 		}
 	}
