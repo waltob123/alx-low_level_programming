@@ -12,10 +12,10 @@ void print_alphabet_x10(void)
 
 	number_of_times = 10;
 
-	for (counter = 0; counter < 10; counter++)
+	for (counter = 0; counter < number_of_times; counter++)
 	{
 		for (ch = 'a'; ch <= 'z'; ch++)
 			_putchar(ch);
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
