@@ -10,7 +10,7 @@ void print_to_98(int n)
 {
 	int stop_point = 98;
 
-	while (n <= 98)
+	while (n <= stop_point)
 	{
 		_putchar(n + '0');
 		_putchar(',');
