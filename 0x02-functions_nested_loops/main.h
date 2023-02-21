@@ -1,6 +1,6 @@
-int _putchar()
+void _putchar(int ch)
 {
-	return (0);
+	putchar(ch);
 }
 
 void print_alphabet(void)
