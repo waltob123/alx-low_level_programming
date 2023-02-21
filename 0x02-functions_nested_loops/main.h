@@ -1,5 +1,5 @@
 int _putchar(char c)
 {
-	printf("%s\n", c);
+	printf("%c\n", c);
 	return (0);
 }
