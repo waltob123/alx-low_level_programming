@@ -1,4 +1,4 @@
-void _putchar()
+int _putchar()
 {
 	return (0);
 }
