@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - print diagonal lines using \
+ * print_diagonal - print diagonal lines
  * @n: number of times to print
  */
 
