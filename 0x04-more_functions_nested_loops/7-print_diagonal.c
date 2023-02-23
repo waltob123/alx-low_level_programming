@@ -5,7 +5,6 @@
  * @n: number of times to print
  */
 
-
 void print_diagonal(int n)
 {
 	int i;
