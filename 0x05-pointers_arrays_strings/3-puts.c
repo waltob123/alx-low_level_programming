@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _puts - prints a string to standard output
@@ -10,7 +11,7 @@ void _puts(char *str)
 {
 	int count = 0;
 
-	for (; count < _strlen(str); count++)
+	for (; count < strlen(str); count++)
 		_putchar(str[count]);
 
 	_putchar('\n');
