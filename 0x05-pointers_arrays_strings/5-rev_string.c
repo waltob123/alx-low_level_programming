@@ -19,15 +19,16 @@ void rev_string(char *s)
 	str_len = count - 1;
 
 	if (str_len % 2 == 0)
-		loop_times = str_len - 1;
+		loop_times = (str_len / 2) - 1;
 	else
-		loop_times = str_len + 1;
+		loop_times = (str_len / 2) + 1;
 
-	for (; loop_times >= 0; loop_times--)
+	for (; i < loop_times; i++)
 	{
 		t = s[i];
-		s[i] = s[loop_times];
-		s[loop_times] = t;
-		i++;
+		s[i] = s[str_len];
+		s[str_len] = t;
+		loop_times--;
+		str_len--;
 	}
 }
