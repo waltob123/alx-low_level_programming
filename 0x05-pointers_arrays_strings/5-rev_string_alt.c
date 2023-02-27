@@ -8,7 +8,7 @@
 
 void rev_string(char *s)
 {
-	int count, i, str_len;
+	int count, i, str_len, loop_times;
 	char t;
 
 	count = i = 0;
@@ -18,12 +18,17 @@ void rev_string(char *s)
 
 	str_len = count - 1;
 
-	while (i < str_len)
+	if (str_len % 2 == 0)
+		loop_times = (str_len / 2) - 1;
+	else
+		loop_times = (str_len / 2) + 1;
+
+	for (; i < loop_times; i++)
 	{
 		t = s[i];
 		s[i] = s[str_len];
 		s[str_len] = t;
-		i++;
+		loop_times--;
 		str_len--;
 	}
 }
