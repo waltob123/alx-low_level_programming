@@ -1,0 +1,1 @@
+This directory contains all solutions to ALX SE Low Level Programming Project pointers, arrays and strings part 2.
