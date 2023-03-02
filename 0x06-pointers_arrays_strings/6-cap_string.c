@@ -1,41 +1,26 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes string
- * @a: string to capitalize
- * Return: a
-*/
+ * *cap_string - capitalizes a string
+ * @str: string to capitalize
+ * Return: str
+ */
 
-char *cap_string(char *a)
+char *cap_string(char *str)
 {
-	int counter = 0;
-	int ans, diff, str_len;
+	int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!',
+		'?', '"', '(', ')', '{', '}'};
+	int i, j;
 
-	str_len = 0;
-
-	while (a[str_len] != '\0')
-		str_len++;
-
-	for (; counter < str_len; counter++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (a[counter] == ',' || a[counter] == ';' || a[counter] == '.'
-		|| a[counter] == '!' || a[counter] == '?' || a[counter] == '"' 
-		|| a[counter] == '(' || a[counter] == ')' || a[counter] == '{' 
-		|| a[counter] == '}' || a[counter] == ' ' || a[counter] == '\t'
-		|| a[counter] == '\n')
-		{
-			if (a[counter + 1] > 96 && a[counter + 1] < 123)
-			{
-				diff = a[counter + 1] - 96;
-				ans = 64 + diff;
-				a[counter + 1] = ans;
-			}
-			else
-			{
-				continue;
-			}
-		}
+		if (str[0] >= 97 && str[0] <= 122)
+	{
+			str[0] = str[0] - 32;
 	}
-	return (a);
+	for (j = 0; j < 14; j++)
+		if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
+			str[i] = str[i] - 32;
+	}
+	return (str);
 }
-
