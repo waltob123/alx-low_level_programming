@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * string_toupper - converts to uppercase
@@ -10,9 +9,14 @@
 char *string_toupper(char *a)
 {
 	int counter = 0;
-	int ans, diff;
+	int ans, diff, str_len;
 
-	for (; counter < strlen(a); counter++)
+	str_len = 0;
+
+	while (a[str_len] != '\0')
+		str_len++;
+
+	for (; counter < str_len; counter++)
 	{
 		if (a[counter] > 96 && a[counter] < 123)
 		{
