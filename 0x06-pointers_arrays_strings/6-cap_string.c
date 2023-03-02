@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * cap_string - capitalizes string
@@ -10,9 +9,14 @@
 char *cap_string(char *a)
 {
 	int counter = 0;
-	int ans, diff;
+	int ans, diff, str_len;
 
-	for (; counter < strlen(a); counter++)
+	str_len = 0;
+
+	while (a[str_len] != '\0')
+		str_len++;
+
+	for (; counter < str_len; counter++)
 	{
 		if (a[counter] == ',' || a[counter] == ';' || a[counter] == '.'
 		|| a[counter] == '!' || a[counter] == '?' || a[counter] == '"' 
