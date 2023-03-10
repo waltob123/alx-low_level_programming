@@ -1,24 +1,28 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - entry point
+ * main - Entry point
  * @argc: number of arguments
- * @argv: arguments
- * Return: 1 if error, else 0.
+ * @argv: pointer to arguments
+ * Return: 0 or 1
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i = 0, j = 0;
+	int num1, num2, product;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	i = atoi(argv[1]);
-	j = atoi(argv[2]);
 
-	printf("%d\n", (a * b));
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	product = num1 * num2;
+
+	printf("%d\n", product);
+
 	return (0);
 }
