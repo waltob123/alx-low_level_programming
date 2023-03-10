@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
- * _isdigit - checks if an arg is digit
- * @c: arg to check
- * Return: 0
+ * _isdigit - check if argument is a digit
+ *
+ * @c: argument to test
+ * Return: 1, 0
  */
 
 int _isdigit(int c)
 {
-	return (0);
+	if (c > 47 && c < 58)
+		return (1);
+	else
+		return (0);
 }

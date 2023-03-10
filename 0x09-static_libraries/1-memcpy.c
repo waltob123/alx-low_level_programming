@@ -1,14 +1,20 @@
 #include "main.h"
 
 /**
- * _memcpy - copies text
+ * _memcpy - copies memory area.
  * @dest: destination
  * @src: source
- * @n: integer
- * Return: char
+ * @n: number of bytes.
+ * Return: dest.
  */
 
-char *_memcpy(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return ('a');
+	unsigned int counter;
+
+	for (counter = 0; counter < n; counter++)
+	{
+		*(dest + counter) = src[counter];
+	}
+	return (dest);
 }

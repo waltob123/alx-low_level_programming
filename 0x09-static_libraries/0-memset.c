@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * _memset - copies text
- * @s: string
- * @b: char
- * @n: integer
- * Return: char
+ * _memset - fills memory with a constant byte.
+ * @s: string pointer
+ * @b: constant character
+ * @n: buffer size
+ * Return: s.
  */
-
-char *_memset(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	return ('a');
+	unsigned int counter;
+
+	for (counter = 0; counter < n; counter++)
+	{
+		*(s + counter) = b;
+	}
+	return (s);
 }
