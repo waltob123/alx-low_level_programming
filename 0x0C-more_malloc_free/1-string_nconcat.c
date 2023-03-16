@@ -7,6 +7,7 @@
  * @s2: string2
  * @n: size
  * Return: NULL or pointer to concatenated string
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
